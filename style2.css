@@ -1,0 +1,203 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+body{
+    
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.4);
+    display:block;
+    align-items: center;
+    justify-content: center;
+}
+
+.background-clip{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+header{
+    width: 100%;
+    height: 85px;
+    display:flex;
+    justify-content: space-between;
+    align-content: space-between;
+    align-items: center;
+    position: sticky;
+    z-index: 99;
+    box-shadow: 0 0 10px #000;
+    background: rgba(66, 176, 193, 0.5);
+    
+}
+header .logo a{
+    text-decoration: none;
+}
+
+header .logo h1{
+    flex:2;
+    font-size: 3rem; /*velikost slova Akvaristika*/
+    color:rgb(0, 0, 0); 
+    margin-left: 50px; /*odsazeni Akvaristika*/
+    text-decoration: none;
+
+
+}
+
+header ul{
+    flex:2; 
+    display: flex; /*dání odrážek vedle sebe*/
+    justify-content:center; /*mezery mezi odrazkami*/
+}
+
+header ul li{
+    list-style: none; /*odrazky pryc*/
+
+}
+
+header ul li a{         /*odrazky*/
+    text-decoration:none;
+    font-size: 1.5rem;
+    color:rgb(96, 151, 200);
+    font-weight: 100;
+    padding: 15px;
+
+}
+header ul li a:hover{
+    color:rgb(108, 69, 10);
+}
+
+header .menu{
+    font-size: 2.5rem;
+    display: none;
+
+}
+
+
+/*showacse*/
+
+.showcase{
+    
+    padding-top: 15.5rem;
+    height: 100%;
+    margin:auto;
+    color: #b11010;
+    
+}
+
+.showcase .nadpisskalar{
+    padding-left: 60px;
+    padding-bottom: 15px;
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+    padding-left: 10px;
+}
+
+.showcase h2{
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    padding-left: 20px;
+    
+    letter-spacing: 2px;
+
+}
+.showcase .podnadpis{
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+.showcase .tlacitko{
+    width: 160px;
+    height: 40px;
+    background: #00ff48;
+   
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+    
+}
+
+.showcase .tlacitko a{
+    text-decoration:none;
+    color: #ff0000;
+    transition: .3s ease;
+}
+
+.tlacitko:hover{
+    background-color: #fff;
+}
+
+.showcase span{
+    color: #000000;
+    font-size: 65px
+}
+@media (min-aspect-ratio:16/9) {
+    .background-clip{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio:16/9) {
+    .background-clip{
+        width: auto;
+        height: 100%;
+    }
+}
+
+/*tri dorazky*/
+#coze{
+    background: #9b2bba;
+    display: block;
+    
+}
+
+#coze .items {
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+    margin: 0px;
+}
+
+#coze .item {
+    text-align: center;
+    padding: 1rem;
+
+}
+
+#coze .item h4{
+    font-size: 2rem;
+    
+}
+
+#coze .items .item i {
+    background: rgb(220, 28, 28);
+    padding: 1rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    
+}
+
+.text-center {
+    text-align: center;
+    
+}
+
+.m-heading{
+    font-size: 3rem;
+}
